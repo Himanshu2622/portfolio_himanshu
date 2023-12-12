@@ -2,6 +2,7 @@ import { useState, useTransition, useRef } from "react";
 import TabbedComponent from "./TabbedComponent";
 import { Skills } from "../constants/Skills";
 import { motion, useInView } from "framer-motion";
+import img2 from "../assets/projects/about.png";
 
 const About = () => {
     const [tab, setTab] = useState("skills");
@@ -58,7 +59,7 @@ const About = () => {
                     transition={{ duration: 0.8 }}
                     className="col-span-5 flex items-center w-[80%] sm:w-[90%] place-self-center ml-10 sm:m-0 "
                 >
-                    <img src="/images/about.png" alt="meme" loading="lazy" />
+                    <img src={img2} alt="meme" loading="lazy" />
                 </motion.div>
                 <motion.div
                     ref={refContent}
